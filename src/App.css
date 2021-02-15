@@ -1,1 +1,33 @@
+.App {
+  background: #060606;
+}
 
+.App footer {
+    text-align: center;
+  margin-top: -20px;
+  font-family: "Athiti", sans-serif;
+  color: #ffd8d8;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.App .container-main {
+    max-width: 500px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  background-image: url("brick-wall.jpg");
+  border-radius: 30px;
+  border: 6px solid black;
+}
+
+.App .link:hover {
+    color: white;
+  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
+}

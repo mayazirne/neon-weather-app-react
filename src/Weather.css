@@ -1,0 +1,137 @@
+@font-face {
+  font-family: neon;
+  src: url("hellodenverdisplayregular_v1.6.ttf");
+}
+
+ul {
+  list-style-type: none;
+  color: #ffd8d8;
+  font-size: 17px;
+  font-family: "Athiti", sans-serif;
+  text-transform: lowercase;
+  position: relative;
+  left: -40px;
+}
+
+input[type="text"] {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding-left: 40px;
+  opacity: 0.5;
+}
+
+hr {
+  border: 0.3px solid white;
+  margin-bottom: 15px;
+  box-shadow: 0.1vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0.1vw #ffd8d8,
+    0.2vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.1vw 0vw 0vw #f25757,
+    0.2vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.1vw 0vw 0.1vw #f25757,
+    0.2vw 0vw 0.1vw #f25757, 0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #f25757,
+    0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.2vw 0vw 5vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 10vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b;
+}
+
+button {
+  border: none;
+  background: none;
+  color: white;
+  opacity: 0.6;
+  transition: all 20ms ease-in-out;
+  font-size: 20px;
+}
+
+button:hover, .main-icon, .neon-text {
+  text-shadow: 0.1vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0.1vw #ffd8d8,
+    0.2vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.1vw 0vw 0vw #f25757,
+    0.2vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.1vw 0vw 0.1vw #f25757,
+    0.2vw 0vw 0.1vw #f25757, 0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #f25757,
+    0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.2vw 0vw 5vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 10vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b;
+}
+
+button:focus {
+  outline: none;
+}
+
+.search-city {
+  text-align: center;
+  top: 0px;
+  margin-bottom: -10px;
+}
+
+.form {
+  outline: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #ffd8d8;
+}
+
+.main-icon {
+  position: relative;
+  color: white;
+  opacity: 0.6;
+  font-size: 120px;
+  top: -100px;
+}
+.container-main {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  background-image: url("brick-wall.jpg");
+  border-radius: 30px;
+  border: 6px solid black;
+}
+
+.wrapper {
+  width: 50vm;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -40px;
+}
+
+.active {
+  color: #ffd8d8;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.neon-text {
+  font-family: neon;
+  text-align: center;
+  font-size: 50px;
+  color: #ffd8d8;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.neon-wrapper {
+  box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #e97272,
+    0 0 4vw 0.4vw #e50b0b, inset 0 0 1.5vw 0.4vw #e50b0b,
+    inset 0 0 0.4vw 0.2vw #e97272, inset 0 0 0.5vw 0.2vw #fff7f7;
+  border-radius: 1.5rem;
+}
+
+.description {
+  text-transform: uppercase;
+  font-family: neon;
+  font-size: 38px;
+  color: #ffd8d8;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.city-name {
+  text-transform: uppercase;
+}

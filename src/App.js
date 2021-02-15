@@ -13,12 +13,14 @@ export default function App() {
         <a
         href="https://www.linkedin.com/in/maya-zirne-788888100/"
         target="_blank"
+        className="link"
         >
         Maya Zirne
         </a> and is {" "}
         <a
         href="https://github.com/mayazirne/neon-weather-app-react"
         target="_blank"
+        className="link"
         >
         open-sourced on GitHub
         </a>
