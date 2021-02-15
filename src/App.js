@@ -1,11 +1,13 @@
 import React from "react";
+import Weather from "./Weather";
 import './App.css';
 
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
-      Weather App
+      <div className="container-main">
+      <Weather />
+      </div>
       <footer>
         This project was build by {" "}
         <a
@@ -22,7 +24,6 @@ export default function App() {
         </a>
       </footer>
       </div>
-    </div>
   );
 }
 
