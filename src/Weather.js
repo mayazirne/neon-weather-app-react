@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import axios from"axios";
+import FormattedDate from "./FormattedDate";
 
 import "./Weather.css";
 
@@ -9,7 +10,7 @@ export default function Weather(props) {
   function handleResponse (response) {
     setWeatherData({
       ready: true,
-      date: "sunday 12:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
@@ -40,7 +41,9 @@ export default function Weather(props) {
         </form>
       </div>
     </div>
-        <h3>{weatherData.date}</h3>
+        <h3>
+          <FormattedDate date={weatherData.date} />
+        </h3>
         <div className="wrapper">
           <div className="neon-wrapper">
             <div className="neon-text">
