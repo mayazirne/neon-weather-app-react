@@ -100,7 +100,7 @@ a:link, a:visited, a:hover, a:active {
   outline: none;
 }
 
-.main-icon {
+canvas {
   position: relative;
   color: white;
   opacity: 0.6;

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
     return (
@@ -36,12 +36,7 @@ export default function WeatherInfo(props) {
               </li>
             </ul>
             <div className="col text-center main-icon">
-              <ReactAnimatedWeather
-    icon="CLEAR_DAY"
-    color="white"
-    size={180}
-    animate={true}
-  />
+              <WeatherIcon code={props.data.icon} />
             </div>
           </div>
           </div>
