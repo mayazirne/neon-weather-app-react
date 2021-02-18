@@ -12,7 +12,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
-      description: response.data.weather[0].description,
+      description: response.data.weather[0].main,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -65,6 +65,7 @@ function search() {
         </h3>
         <WeatherInfo data={weatherData} />
         </div>
+      
   );
   } else {
     search();

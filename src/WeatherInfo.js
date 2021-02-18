@@ -1,5 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemparature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
     return (
@@ -9,21 +10,12 @@ export default function WeatherInfo(props) {
             <div className="neon-text">
               <span className="city-name">{props.data.city}</span>
               <br />
-              <span>{Math.round(props.data.temperature)}</span>°
-              <span id="units">
-                <a href="/" id="celsius-link">
-                 {" "} C {" "}
-                </a>
-                |
-                <a href="/" id="fahrenheit-link" className="active">
-                 {" "} F
-                </a>
-              </span>
+              <WeatherTemparature celcius={props.data.temperature}/>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col-8">
             <ul>
               <li>
                 <span className="description">{props.data.description}</span>
@@ -35,11 +27,11 @@ export default function WeatherInfo(props) {
                 wind: <span id="wind">{Math.round(props.data.wind)}</span>{" "}km/h
               </li>
             </ul>
-            <div className="col text-center main-icon">
+            </div>
+            <div className="col-4">
               <WeatherIcon code={props.data.icon} />
             </div>
           </div>
           </div>
-          </div>
     );
-}
+    }
