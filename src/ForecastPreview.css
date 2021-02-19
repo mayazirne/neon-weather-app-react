@@ -1,0 +1,23 @@
+.ForecastPreview canvas {
+  color: #ffd8d8;
+  opacity: 0.7;
+  width: 60px;
+  display: block;
+  margin: 5px auto;
+}
+
+.ForecastPreview {
+  text-align: center;
+  font-size: 22px;
+  color: #ffd8d8;
+  font-family: "Athiti", sans-serif;
+  margin-bottom: 6px;
+  line-height: 20px;
+  margin: 5px 0;
+}
+
+.forecast-temp {
+  font-size: 25px;
+}
+
+

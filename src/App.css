@@ -1,4 +1,4 @@
-.App {
+body {
   background: #060606;
 }
 
@@ -9,14 +9,6 @@
   color: #ffd8d8;
   opacity: 0.7;
   font-size: 14px;
-}
-.App .container-main {
-  max-width: 500px;
-  margin: 10px auto;
-  padding: 10px 30px;
-  background-image: url("brick-wall.jpg");
-  border-radius: 30px;
-  border: 6px solid black;
 }
 
 .App .link:hover {

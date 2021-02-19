@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import axios from"axios";
 import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import "./Weather.css";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready:false });
+  const [unit, setUnit] = useState("celsius");
+
   function handleResponse (response) {
     setWeatherData({
       ready: true,
@@ -18,6 +21,8 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
       icon: response.data.weather[0].icon,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
     });
   }
 
@@ -37,9 +42,21 @@ function search() {
     setCity(event.target.value);
   }
 
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
+  function searchLocation(position) {
+    let lon = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let apiKey = "777f2ae51fd48d180efbcfe9388ca9cb";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   if (weatherData.ready) {
     return (
-    <div>
+    <div className="container-main">
        <div className="row">
       <div className="col-sm">
         <form className="search-city" onSubmit={handleSubmit}>
@@ -55,7 +72,7 @@ function search() {
             <i className="fas fa-search"></i>
           </button>
           <button id="current-location-button">
-            <i className="fas fa-map-marker-alt"></i>
+            <i className="fas fa-map-marker-alt" onClick={getCurrentLocation}></i>
           </button>
         </form>
       </div>
@@ -63,9 +80,12 @@ function search() {
         <h3>
           <FormattedDate date={weatherData.date} />
         </h3>
-        <WeatherInfo data={weatherData} />
+        <WeatherInfo data={weatherData} unit={unit} setUnit={setUnit} />
+        <div className="line">
+        _________________________
         </div>
-      
+        <WeatherForecast city={weatherData.city} latitude={weatherData.lat} longitude={weatherData.lon} unit={unit} />
+        </div>
   );
   } else {
     search();

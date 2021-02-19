@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
-import WeatherTemparature from "./WeatherTemperature";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
     return (
@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
             <div className="neon-text">
               <span className="city-name">{props.data.city}</span>
               <br />
-              <WeatherTemparature celcius={props.data.temperature}/>
+              <WeatherTemperature celsius={props.data.temperature} unit={props.unit} setUnit={props.setUnit}/>
             </div>
           </div>
         </div>
