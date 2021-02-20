@@ -20,8 +20,7 @@ export default function(props) {
     if (unit === "celsius") {
         return (
         <span>
-        <span>{Math.round(props.celsius)}</span>°
-              <span>
+        {Math.round(props.celsius)}°
                 <a href="/">
                  {" "} C {" "}
                 </a>
@@ -30,22 +29,19 @@ export default function(props) {
                  {" "} F
                 </a>
               </span>
-              </span>
     );
     } else {
          return (
         <span>
-        <span>{Math.round(fahrenheit())}</span>°
-              <span>
-                <a href="/" onClick={showCelsius} className="active">
-                 {" "} C {" "}
-                </a>
-                |
-                <a href="/">
-                 {" "} F
-                </a>
-              </span>
-              </span>
+        {Math.round(fahrenheit())}°
+        <a href="/" onClick={showCelsius} className="active">
+        {" "} C {" "}
+        </a>
+            
+        <a href="/">
+        {" "} F
+        </a>
+        </span>
     );
     }
 }

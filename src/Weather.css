@@ -12,15 +12,16 @@ button {
   font-size: 20px;
 }
 
-button:hover, .main-icon, .neon-text {
-  text-shadow: 0.1vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0.1vw #ffd8d8,
-    0.2vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.1vw 0vw 0vw #f25757,
-    0.2vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.1vw 0vw 0.1vw #f25757,
-    0.2vw 0vw 0.1vw #f25757, 0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #f25757,
-    0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
-    0.2vw 0vw 5vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 10vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
-    0.4vw 0vw 5vw #e50b0b;
+button:hover {
+  opacity: 0.9;
+  text-shadow: 0 0 5px #F766AE,
+        0 0 10px #ff7bac,
+        0 0 20px #F0178F,
+        0 0 40px #F0178F,
+        0 0 80px #F0178F,
+        0 0 90px #F0178F,
+        0 0 100px #F0178F,
+        0 0 150px #F0178F;
 }
 
 button:focus {
@@ -40,37 +41,23 @@ h3 {
   text-align: center;
   color: #ffd8d8;
   margin-top: 20px;
-  margin-bottom: -60px;
-  font-family: "Athiti", sans-serif;
+  margin-bottom: -65px;
+  font-family: 'Italiana', serif;
   text-transform: lowercase;
-}
-
-.line {
-  margin-top: -23px;
-  color: #ffd8d8;
-  text-align: center;
-  font-size: 35px;
-  text-shadow: 0.1vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0.1vw #ffd8d8,
-    0.2vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.1vw 0vw 0vw #f25757,
-    0.2vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.1vw 0vw 0.1vw #f25757,
-    0.2vw 0vw 0.1vw #f25757, 0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #f25757,
-    0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
-    0.2vw 0vw 5vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 10vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
-    0.4vw 0vw 5vw #e50b0b;
 }
 
 ul {
   list-style-type: none;
   color: #ffd8d8;
-  font-size: 17px;
-  font-family: "Athiti", sans-serif;
+  font-size: 18px;
+  font-family: 'Italiana', serif;
   text-transform: lowercase;
   position: relative;
-  left: 5px;
+  left: 20px;
+  margin-top: -25px;
 }
 
-a:link, a:visited, a:hover, a:active {
+ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: #ffd8d8;
 }
@@ -78,10 +65,9 @@ a:link, a:visited, a:hover, a:active {
 .active {
   color: #ffd8d8;
   text-shadow: none;
-  font-weight: bold;
 }
 
-.active:hover {
+ .active:hover {
   text-decoration: none;
 }
 
@@ -91,11 +77,11 @@ a:link, a:visited, a:hover, a:active {
 
 .description {
   text-transform: uppercase;
+  font-weight: bold;
   font-family: neon;
   font-size: 40px;
   color: #ffd8d8;
-  font-weight: bold;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .form {
@@ -105,24 +91,33 @@ a:link, a:visited, a:hover, a:active {
 canvas {
   position: relative;
   color: white;
-  opacity: 0.7;
-  margin-left: -80px;
-  margin-top: -13px;
+  opacity: 0.5;
+  margin-left: -60px;
+  margin-top: -25px;
 }
 
-.neon-text {
+ .neon-text {
   font-family: neon;
+  line-height: 65px;
   text-align: center;
   font-size: 50px;
   color: #ffd8d8;
   padding: 0 1.5rem 0 1.5rem;
+  text-shadow: 0 0 5px #F766AE,
+        0 0 10px #F0178F,
+        0 0 20px #F0178F,
+        0 0 80px #F0178F,
+        0 0 90px #F0178F,
+        0 0 100px #F0178F,
+        0 0 150px #F0178F;
 }
 
 .neon-wrapper {
-  box-shadow: 0 0 0.1vw 0.4vw #fff7f7, 0 0 0.4vw 0.6vw #e97272,
-    0 0 4vw 0.4vw #e50b0b, inset 0 0 1.5vw 0.4vw #e50b0b,
-    inset 0 0 0.4vw 0.2vw #e97272, inset 0 0 0.5vw 0.2vw #fff7f7;
+  box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 0.4vw 0.6vw #F766AE,
+    0 0 4vw 0.4vw #F0178F, inset 0 0 1.5vw 0.4vw #F0178F,
+    inset 0 0 0.4vw 0.2vw #F766AE, inset 0 0 0.5vw 0.2vw #fff7f7;
   border-radius: 1.5rem;
+  
 }
 
 .search-city {
@@ -137,15 +132,20 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -40px;
+  margin-bottom: -30px;
 }
 
 .container-main {
-  max-width: 500px;
+  max-width: 490px;
   margin: 15px auto;
   padding: 10px 40px;
-  background-image: url("brick-wall.jpg");
+  background-image: url("palm.jpg");
   border-radius: 30px;
-  border: 6px solid black;
+  border: 6px solid #0d1411;
+}
+
+.bigger {
+  font-size: 21px;
+  
 }
 

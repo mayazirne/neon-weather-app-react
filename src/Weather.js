@@ -81,10 +81,8 @@ function search() {
           <FormattedDate date={weatherData.date} />
         </h3>
         <WeatherInfo data={weatherData} unit={unit} setUnit={setUnit} />
-        <div className="line">
-        _________________________
-        </div>
-        <WeatherForecast city={weatherData.city} latitude={weatherData.lat} longitude={weatherData.lon} unit={unit} />
+        
+          <WeatherForecast city={weatherData.city} latitude={weatherData.lat} longitude={weatherData.lon} unit={unit} />
         </div>
   );
   } else {

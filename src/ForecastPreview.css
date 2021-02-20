@@ -1,6 +1,6 @@
 .ForecastPreview canvas {
   color: #ffd8d8;
-  opacity: 0.7;
+  opacity: 0.5;
   width: 60px;
   display: block;
   margin: 5px auto;
@@ -8,16 +8,30 @@
 
 .ForecastPreview {
   text-align: center;
-  font-size: 22px;
+  font-size: 30px;
   color: #ffd8d8;
-  font-family: "Athiti", sans-serif;
+  font-family: 'Italiana', serif;
   margin-bottom: 6px;
-  line-height: 20px;
-  margin: 5px 0;
+  line-height: 30px;
+  margin: 15px 0;
+  margin-bottom: 7px;
 }
 
-.forecast-temp {
-  font-size: 25px;
+.ForecastPreview .forecast-temp {
+  font-size: 32px;
+
+}
+
+.ForecastPreview .days {
+  font-family: neon;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #F766AE,
+        0 0 10px #F0178F,
+        0 0 20px #F0178F,
+        0 0 80px #F0178F,
+        0 0 90px #F0178F,
+        0 0 100px #F0178F,
+        0 0 150px #F0178F;
 }
 
 

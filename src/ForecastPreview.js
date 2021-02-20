@@ -26,17 +26,17 @@ export default function ForecastPreview(props) {
     if (props.unit === "celsius") {
     return (
         <div className="ForecastPreview col">
-        {getDay()}
+        <span className="days">{getDay()}</span>
         <WeatherIcon code={props.data.weather[0].icon} className="small-icons"/>
-        <strong className="forecast-temp">{celsiusTemperature()}</strong>
+        <span className="forecast-temp">{celsiusTemperature()}</span>
         </div>
     );
 } else {
     return (
         <div className="ForecastPreview col">
-        {getDay()}
+        <span className="days">{getDay()}</span>
         <WeatherIcon code={props.data.weather[0].icon} className="small-icons"/>
-        <strong className="forecast-temp">{fahrenheitTemperature()}</strong>
+        <span className="forecast-temp">{fahrenheitTemperature()}</span>
         </div>
     );
     }
