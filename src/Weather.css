@@ -150,7 +150,7 @@ canvas {
 }
 
 @media (max-width: 580px) {
-  container {
+  .container {
     left: 20px;
   }
 }
