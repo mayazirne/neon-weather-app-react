@@ -53,7 +53,7 @@ ul {
   font-family: 'Italiana', serif;
   text-transform: lowercase;
   position: relative;
-  left: -45px;
+  left: -40px;
  
 }
 
@@ -79,7 +79,7 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
   font-family: neon;
-  font-size: 40px;
+  font-size: 38px;
   color: #ffd8d8;
   opacity: 0.6;
 }
@@ -93,7 +93,7 @@ canvas {
   color: white;
   opacity: 0.4;
   margin-left: 60px;
-  
+  max-width: 130;
 }
 
  .neon-text {
@@ -133,15 +133,6 @@ canvas {
   align-items: center;
   justify-content: center;
   margin-bottom: -55px;
-}
-
-.container-main {
-  max-width: 490px;
-  margin: 15px auto;
-  padding: 10px 40px;
-  background-image: url("palm.jpg");
-  border-radius: 30px;
-  border: 6px solid #0D1411;
 }
 
 .bigger {

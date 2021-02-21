@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ForecastPreview from "./ForecastPreview";
 import axios from "axios";
 
-export default function WeatherForecast(props) {
+export default function Forecast(props) {
     const [loaded, setLoaded] = useState(false);
     const [forecast, setForecast] = useState(null);
 
@@ -15,10 +15,10 @@ export default function WeatherForecast(props) {
     props.longitude === forecast.lon) {
         return (
             <div className="WeatherForecast row">
-                <ForecastPreview data={forecast.daily[1]} unit={props.unit} timezone={forecast.timezone_offset} />
-                <ForecastPreview data={forecast.daily[2]} unit={props.unit} timezone={forecast.timezone_offset} />
-                <ForecastPreview data={forecast.daily[3]} unit={props.unit} timezone={forecast.timezone_offset} />
-                <ForecastPreview data={forecast.daily[4]} unit={props.unit} timezone={forecast.timezone_offset} />
+                <ForecastPreview data={forecast.daily[1]} timezone={forecast.timezone_offset} />
+                <ForecastPreview data={forecast.daily[2]} timezone={forecast.timezone_offset} />
+                <ForecastPreview data={forecast.daily[3]} timezone={forecast.timezone_offset} />
+                <ForecastPreview data={forecast.daily[4]} timezone={forecast.timezone_offset} />
             </div>
     );
     

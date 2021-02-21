@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from"axios";
+import Loader from 'react-loader-spinner';
 import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast";
+import Forecast from "./Forecast";
 
 import "./Weather.css";
 
@@ -56,7 +57,7 @@ function search() {
 
   if (weatherData.ready) {
     return (
-    <div className="container-main">
+      <div>
        <div className="row">
       <div className="col-sm">
         <form className="search-city" onSubmit={handleSubmit}>
@@ -80,14 +81,13 @@ function search() {
         <h3>
           <FormattedDate date={weatherData.date} />
         </h3>
-        <WeatherInfo data={weatherData} unit={unit} setUnit={setUnit} />
-        
-          <WeatherForecast city={weatherData.city} latitude={weatherData.lat} longitude={weatherData.lon} unit={unit} />
-        </div>
+        <WeatherInfo data={weatherData}  />
+          <Forecast city={weatherData.city} latitude={weatherData.lat} longitude={weatherData.lon} />
+          </div>
   );
   } else {
     search();
-    return "Loading..."
+    return <center><Loader type="ThreeDots" color="#ffd8d8" height={100} width={100} /></center>
   }
 
 }
