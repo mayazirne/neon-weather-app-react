@@ -1,24 +1,24 @@
 .ForecastPreview canvas {
   color: #ffd8d8;
-  opacity: 0.5;
-  width: 60px;
+  opacity: 0.4;
+  width: 57px;
   display: block;
   margin: 5px auto;
 }
 
 .ForecastPreview {
   text-align: center;
-  font-size: 30px;
+  font-size: 29px;
   color: #ffd8d8;
   font-family: 'Italiana', serif;
   margin-bottom: 6px;
   line-height: 30px;
-  margin: 15px 0;
-  margin-bottom: 7px;
+  margin: 23px 0;
+  margin-bottom: 4px;
 }
 
 .ForecastPreview .forecast-temp {
-  font-size: 32px;
+  font-size: 31px;
 
 }
 

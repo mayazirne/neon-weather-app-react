@@ -37,7 +37,7 @@ export default function(props) {
         <a href="/" onClick={showCelsius} className="active">
         {" "} C {" "}
         </a>
-            
+        |
         <a href="/">
         {" "} F
         </a>

@@ -53,8 +53,8 @@ ul {
   font-family: 'Italiana', serif;
   text-transform: lowercase;
   position: relative;
-  left: 20px;
-  margin-top: -25px;
+  left: -45px;
+ 
 }
 
  a:link, a:visited, a:hover, a:active {
@@ -91,9 +91,9 @@ ul {
 canvas {
   position: relative;
   color: white;
-  opacity: 0.5;
-  margin-left: -60px;
-  margin-top: -25px;
+  opacity: 0.4;
+  margin-left: 60px;
+  
 }
 
  .neon-text {
@@ -116,7 +116,7 @@ canvas {
   box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 0.4vw 0.6vw #F766AE,
     0 0 4vw 0.4vw #F0178F, inset 0 0 1.5vw 0.4vw #F0178F,
     inset 0 0 0.4vw 0.2vw #F766AE, inset 0 0 0.5vw 0.2vw #fff7f7;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   
 }
 
@@ -132,7 +132,7 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -30px;
+  margin-bottom: -55px;
 }
 
 .container-main {
@@ -141,11 +141,9 @@ canvas {
   padding: 10px 40px;
   background-image: url("palm.jpg");
   border-radius: 30px;
-  border: 6px solid #0d1411;
+  border: 6px solid #0D1411;
 }
 
 .bigger {
-  font-size: 21px;
-  
+  font-size: 21px; 
 }
-

@@ -14,13 +14,13 @@ export default function App() {
         className="link"
         >
         Maya Zirne
-        </a> and is {" "}
+        </a> and is open-sourced on {" "}
         <a
         href="https://github.com/mayazirne/neon-weather-app-react"
         target="_blank"
         className="link"
         >
-        open-sourced on GitHub
+         GitHub
         </a>
       </footer>
       </div>
