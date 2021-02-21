@@ -145,14 +145,10 @@ canvas {
 }
 
 .container {
-  position: relative;
-  left: 40px;
+    width: 20vm;
+  height: 22vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 580px) {
-  .container {
-    position: relative;
-    left: -10px;
-    display: flex;
-  }
-}
