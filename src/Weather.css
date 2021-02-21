@@ -61,7 +61,7 @@ ul {
   font-family: 'Italiana', serif;
   text-transform: lowercase;
   display: inline-block;
- 
+  margin: 0;
 }
 
  a:link, a:visited, a:hover, a:active {

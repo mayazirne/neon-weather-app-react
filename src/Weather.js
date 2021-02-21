@@ -62,11 +62,9 @@ function search() {
         <form className="search-city" onSubmit={handleSubmit}>
           <input
             type="search"
-            id="city-input"
             className="form"
             placeholder="Search for a city"
             autoComplete="off"
-             autoFocus
             onChange={handleCityChange}
           />
           <button type="submit">

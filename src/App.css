@@ -1,6 +1,12 @@
-.App {
+.App .container-main {
+  max-width: 490px;
+  margin: 15px auto;
+  padding: 10px 40px;
+  background-image: url("palm.jpg");
+  border-radius: 30px;
+  border: 6px solid #0D1411;
+  max-height: fit-content;
   text-align: center;
-   margin: 0 auto;
 }
 
 body {
@@ -15,15 +21,6 @@ body {
   font-size: 15px;
 }
 
-.App .container-main {
-  max-width: 490px;
-  margin: 15px auto;
-  padding: 10px 40px;
-  background-image: url("palm.jpg");
-  border-radius: 30px;
-  border: 6px solid #0D1411;
-  max-height: fit-content;
-}
 
 .App .link {
   color: #ffd8d8;
