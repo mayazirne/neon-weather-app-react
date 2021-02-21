@@ -10,7 +10,6 @@ import "./Weather.css";
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready:false });
-  const [unit, setUnit] = useState("celsius");
 
   function handleResponse (response) {
     setWeatherData({

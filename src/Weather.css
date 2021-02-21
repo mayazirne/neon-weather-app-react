@@ -146,9 +146,3 @@ canvas {
 .bigger {
   font-size: 21px; 
 }
-
-@media (max-width: 580px) {
-  canvas {
-    margin-left: 10px;
-  }
-}
