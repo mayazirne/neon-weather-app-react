@@ -151,3 +151,9 @@ canvas {
   justify-content: center;
 }
 
+@media (max-width: 580px) {
+  .container {
+    display: block;
+  }
+}
+
