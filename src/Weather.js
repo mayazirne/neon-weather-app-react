@@ -62,11 +62,12 @@ function search() {
       <div className="col-sm">
         <form className="search-city" onSubmit={handleSubmit}>
           <input
-            type="text"
+            type="search"
             id="city-input"
             className="form"
             placeholder="Search for a city"
             autoComplete="off"
+             autoFocus
             onChange={handleCityChange}
           />
           <button type="submit">
@@ -87,7 +88,6 @@ function search() {
   );
   } else {
     search();
-    return <center><Loader type="ThreeDots" color="#ffd8d8" height={100} width={100} /></center>
+    return <center><Loader type="ThreeDots" color="#ffd8d8" height={100} width={100} timeout={3000} /></center>
   }
-
 }
