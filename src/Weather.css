@@ -60,8 +60,7 @@ ul {
   font-size: 18px;
   font-family: 'Italiana', serif;
   text-transform: lowercase;
-  position: relative;
-  left: -40px;
+  display: inline-block
  
 }
 
@@ -97,11 +96,9 @@ ul {
 }
 
 canvas {
-  position: relative;
   color: white;
   opacity: 0.4;
-  margin-left: 60px;
-  max-width: 130;
+  display: inline-block;
 }
 
  .neon-text {
@@ -145,5 +142,10 @@ canvas {
 
 .bigger {
   font-size: 21px; 
+}
+
+.container {
+  position: relative;
+  left: 40px;
 }
 
