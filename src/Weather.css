@@ -3,7 +3,7 @@
   src: url("hellodenverdisplayregular_v1.6.ttf");
 }
 
-button {
+.Weather button {
   border: none;
   background: none;
   color: white;
@@ -12,7 +12,7 @@ button {
   font-size: 20px;
 }
 
-button:hover {
+.Weather button:hover, button:focus {
   opacity: 0.9;
   text-shadow: 0 0 5px #F766AE,
         0 0 10px #ff7bac,
@@ -24,19 +24,15 @@ button:hover {
         0 0 150px #F0178F;
 }
 
-button:focus {
+.Weather button:focus {
   outline: none;
-  text-shadow: 0 0 5px #F766AE,
-        0 0 10px #ff7bac,
-        0 0 20px #F0178F,
-        0 0 40px #F0178F,
-        0 0 80px #F0178F,
-        0 0 90px #F0178F,
-        0 0 100px #F0178F,
-        0 0 150px #F0178F;
 }
 
-input[type="search"] {
+.Weather canvas {
+  opacity: 0.4;
+}
+
+.Weather input[type="search"] {
   background-color: white;
   border: none;
   border-radius: 30px;
@@ -44,7 +40,7 @@ input[type="search"] {
   opacity: 0.4;
 }
 
-h3 {
+.Weather h3 {
   font-size: 17px;
   text-align: center;
   color: #ffd8d8;
@@ -53,7 +49,7 @@ h3 {
   text-transform: lowercase;
 }
 
-ul {
+.Weather ul {
   list-style-type: none;
   color: #ffd8d8;
   font-size: 18px;
@@ -62,9 +58,13 @@ ul {
 
 }
 
- a:link, a:visited, a:hover, a:active {
+ .Weather a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: #ffd8d8;
+}
+
+.Weather .bigger {
+  font-size: 21px; 
 }
 
 .active {
@@ -72,32 +72,35 @@ ul {
   text-shadow: none;
 }
 
- .active:hover {
+.Weather  .active:hover {
   text-decoration: none;
 }
 
-.city-name {
+.Weather .city-name {
   text-transform: uppercase;
 }
 
-.description {
+.Weather .container {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Weather .description {
   text-transform: uppercase;
-  font-weight: bold;
   font-family: neon;
-  font-size: 38px;
+  font-size: 37px;
   color: #ffd8d8;
-  opacity: 0.6;
+  opacity: 0.7;
+  
 }
 
-.form {
+.Weather .form {
   outline: none;
 }
 
-canvas {
-  opacity: 0.4;
-}
-
- .neon-text {
+ .Weather .neon-text {
   font-family: neon;
   line-height: 65px;
   text-align: center;
@@ -113,38 +116,25 @@ canvas {
         0 0 150px #F0178F;
 }
 
-.neon-wrapper {
+.Weather .neon-wrapper {
   box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 0.4vw 0.6vw #F766AE,
     0 0 4vw 0.4vw #F0178F, inset 0 0 1.5vw 0.4vw #F0178F,
     inset 0 0 0.4vw 0.2vw #F766AE, inset 0 0 0.5vw 0.2vw #fff7f7;
   border-radius: 1rem;
-  
 }
 
-.search-city {
+.Weather .search-city {
   text-align: center;
   top: 0px;
   margin-bottom: -10px;
 }
 
-.wrapper {
+.Weather .wrapper {
   margin: 25px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 35px;
-
-}
-
-.bigger {
-  font-size: 21px; 
-}
-
-.container {
-  margin: 10px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 500px) {

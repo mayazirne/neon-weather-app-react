@@ -56,7 +56,7 @@ function search() {
 
   if (weatherData.ready) {
     return (
-      <div>
+      <div className="Weather">
        <div className="row">
       <div className="col-sm">
         <form className="search-city" onSubmit={handleSubmit}>
