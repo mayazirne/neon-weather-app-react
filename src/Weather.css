@@ -157,5 +157,10 @@ canvas {
     position: relative;
     left: -10px;
   }
+
+  ul {
+    position: relative;
+    top: 30px;
+  }
 }
 
