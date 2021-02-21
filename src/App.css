@@ -13,7 +13,7 @@ body {
 .App .container-main {
   max-width: 490px;
   margin: 15px auto;
-  padding: 10px 40px;
+  padding: 10px 35px;
   background-image: url("palm.jpg");
   border-radius: 30px;
   border: 6px solid #0D1411;
@@ -29,4 +29,10 @@ body {
         0 0 90px #F0178F,
         0 0 100px #F0178F,
         0 0 150px #F0178F;
+}
+
+@media (max-width: 560px) {
+  .container-main {
+    padding: 10px 20px;
+  }
 }
