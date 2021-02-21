@@ -152,6 +152,7 @@ canvas {
 @media (max-width: 580px) {
   .container {
     position: relative;
+    left: 40px;
      display: flex;
     align-items: center;
   }
