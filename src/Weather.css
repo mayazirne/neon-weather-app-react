@@ -150,10 +150,10 @@ canvas {
 @media (max-width: 500px) {
   ul {
     position: relative;
-    top: -120px;
-    left: 110px;
+    top: -130px;
+    left: 120px;
   }
   .container {
-    margin-bottom: 20px;
+    margin-bottom: -30px;
   }
 }
