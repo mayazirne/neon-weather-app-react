@@ -31,9 +31,3 @@ body {
         0 0 150px #F0178F;
 }
 
-@media (max-width: 580px) {
-  .container-main {
-    display: flex;
-    padding: 10px 20px;
-  }
-}
