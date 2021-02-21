@@ -60,8 +60,7 @@ ul {
   font-size: 18px;
   font-family: 'Italiana', serif;
   text-transform: lowercase;
-  display: inline-block;
-  margin: 0;
+
 }
 
  a:link, a:visited, a:hover, a:active {
@@ -98,7 +97,6 @@ ul {
 canvas {
   color: white;
   opacity: 0.4;
-  display: inline-block;
 }
 
  .neon-text {
@@ -151,16 +149,14 @@ canvas {
   justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .container {
-    display: inline-block;
     margin-bottom: -80px;
-  
   }
 
   ul {
     position: relative;
-    top: -120px;
+    top: -130px;
     left: 120px;
   }
 }
