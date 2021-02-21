@@ -154,7 +154,8 @@ canvas {
 @media screen and (max-width: 600px) {
   .container {
     display: inline-block;
-    width: 100%;
+    position: relative;
+    left: -10px;
   }
 }
 

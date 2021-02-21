@@ -22,6 +22,7 @@ body {
   background-image: url("palm.jpg");
   border-radius: 30px;
   border: 6px solid #0D1411;
+  max-height: fit-content;
 }
 
 .App .link {
@@ -36,10 +37,5 @@ body {
         0 0 150px #F0178F;
 }
 
-@media screen and (max-width: 600px) {
-  .container-main {
-    padding: 5px 20px;
-  }
-}
 
 
