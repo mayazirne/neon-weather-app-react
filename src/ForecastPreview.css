@@ -1,7 +1,7 @@
 .ForecastPreview {
-  margin: 20px auto;
+  margin: 15px auto;
   text-align: center;
-  font-size: 31px;
+  font-size: 32px;
   color: #ffd8d8;
   font-family: 'Italiana', serif;
   line-height: 28px;
@@ -29,7 +29,7 @@
 }
 
 .ForecastPreview .forecast-temp {
-  font-size: 31px;
+  font-size: 30px;
 }
 
 

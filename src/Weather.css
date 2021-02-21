@@ -41,7 +41,7 @@ input[type="search"] {
   border: none;
   border-radius: 30px;
   padding-left: 40px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 h3 {
@@ -94,7 +94,6 @@ ul {
 }
 
 canvas {
-  color: white;
   opacity: 0.4;
 }
 
@@ -148,3 +147,10 @@ canvas {
   justify-content: center;
 }
 
+@media (max-width: 500px) {
+  ul {
+    position: relative;
+    top: 120px;
+    left: 110px;
+  }
+}
