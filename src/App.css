@@ -36,5 +36,10 @@ body {
         0 0 150px #F0178F;
 }
 
+@media screen and (max-width: 600px) {
+  .container-main {
+    padding: 5px 20px;
+  }
+}
 
 
