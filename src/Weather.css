@@ -154,14 +154,14 @@ canvas {
 @media screen and (max-width: 600px) {
   .container {
     display: inline-block;
-    position: relative;
-    left: -10px;
+    margin-bottom: -20px;
+  
   }
 
   ul {
     position: relative;
-    top: -100px;
-    left: 100px;
+    top: -120px;
+    left: 120px;
   }
 }
 
