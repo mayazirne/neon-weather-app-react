@@ -1,18 +1,17 @@
 .ForecastPreview {
+  margin: 20px auto;
   text-align: center;
   font-size: 31px;
   color: #ffd8d8;
   font-family: 'Italiana', serif;
-  margin-bottom: 6px;
   line-height: 28px;
-  margin: 23px 0;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .ForecastPreview canvas {
   color: #ffd8d8;
   opacity: 0.4;
-  width: 57px;
+  width: 58px;
   display: block;
   margin: 6px auto;
 }
