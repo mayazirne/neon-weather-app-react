@@ -16,7 +16,12 @@ export default function App() {
         className="link"
         >
          GitHub {" "}
-        </a>
+        </a>{" "} ▪ {" "} hosted on {" "}
+        <a
+        href="https://hopeful-poincare-7b41bf.netlify.app/"
+        target="_blank"
+        className="link"
+        >Netlify</a>
          ▪ {" "} by{" "}
          <a
         href="https://www.linkedin.com/in/maya-zirne-788888100/"
@@ -24,12 +29,7 @@ export default function App() {
         className="link"
         >
         Maya Zirne 
-        </a>{" "} ▪ {" "} hosted on {" "}
-        <a
-        href="https://hopeful-poincare-7b41bf.netlify.app/"
-        target="_blank"
-        className="link"
-        >Netlify</a>
+        </a>
       </footer>
       </div>
   );
