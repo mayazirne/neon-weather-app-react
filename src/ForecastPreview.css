@@ -1,11 +1,11 @@
 .ForecastPreview {
-  margin: 10px auto;
+  margin: 8px auto;
   text-align: center;
   font-size: 32px;
   color: #ffd8d8;
   font-family: 'Italiana', serif;
   line-height: 31px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .ForecastPreview canvas {
@@ -29,7 +29,7 @@
 }
 
 .ForecastPreview .forecast-temp {
-  font-size: 30px;
+  font-size: 27px;
 }
 
 

@@ -45,6 +45,7 @@
   text-align: center;
   color: #ffd8d8;
   margin-top: 15px;
+  margin-bottom: 26px;
   font-family: 'Italiana', serif;
   text-transform: lowercase;
 }
@@ -130,19 +131,14 @@
 }
 
 .Weather .wrapper {
-  margin: 23px auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 @media (max-width: 500px) {
-  ul {
-    position: relative;
-    top: -130px;
-    left: 115px;
-  }
   .container {
     margin-bottom: -80px;
   }
