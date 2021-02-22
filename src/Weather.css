@@ -44,7 +44,7 @@
   font-size: 17px;
   text-align: center;
   color: #ffd8d8;
-  margin-top: 20px;
+  margin-top: 15px;
   font-family: 'Italiana', serif;
   text-transform: lowercase;
 }
@@ -81,7 +81,7 @@
 }
 
 .Weather .container {
-  margin: 10px auto;
+  margin: 5px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +90,7 @@
 .Weather .description {
   text-transform: uppercase;
   font-family: neon;
-  font-size: 37px;
+  font-size: 34px;
   color: #ffd8d8;
   opacity: 0.7;
   
@@ -102,9 +102,9 @@
 
  .Weather .neon-text {
   font-family: neon;
-  line-height: 65px;
+  line-height: 60px;
   text-align: center;
-  font-size: 50px;
+  font-size: 47px;
   color: #ffd8d8;
   padding: 0 1.5rem 0 1.5rem;
   text-shadow: 0 0 5px #F766AE,
@@ -130,7 +130,7 @@
 }
 
 .Weather .wrapper {
-  margin: 25px auto;
+  margin: 23px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,6 +144,6 @@
     left: 115px;
   }
   .container {
-    margin-bottom: -60px;
+    margin-bottom: -80px;
   }
 }

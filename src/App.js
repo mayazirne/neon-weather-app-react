@@ -9,7 +9,7 @@ export default function App() {
       <Weather defaultCity="London" />
       </div>
       <footer>
-         Open-sourced on {" "}
+         open-sourced on {" "}
         <a
         href="https://github.com/mayazirne/neon-weather-app-react"
         target="_blank"
@@ -17,14 +17,19 @@ export default function App() {
         >
          GitHub {" "}
         </a>
-         by{" "}
+         ▪ {" "} by{" "}
          <a
         href="https://www.linkedin.com/in/maya-zirne-788888100/"
         target="_blank"
         className="link"
         >
-        Maya Zirne {" "}
-        </a>
+        Maya Zirne 
+        </a>{" "} ▪ {" "} hosted on {" "}
+        <a
+        href="https://hopeful-poincare-7b41bf.netlify.app/"
+        target="_blank"
+        className="link"
+        >Netlify</a>
       </footer>
       </div>
   );

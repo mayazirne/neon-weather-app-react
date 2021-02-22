@@ -1,6 +1,6 @@
 .App .container-main {
-  max-width: 490px;
-  margin: 15px auto;
+  max-width: 480px;
+  margin: 20px auto;
   padding: 10px 40px;
   background-image: url("palm.jpg");
   border-radius: 30px;
@@ -13,10 +13,10 @@ body {
 
 .App footer {
   text-align: center;
-  margin-top: -13px;
+  margin-top: -20px;
   font-family: 'Italiana', serif;
   color: #ffd8d8;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 

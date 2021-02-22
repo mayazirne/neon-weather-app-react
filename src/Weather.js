@@ -65,6 +65,7 @@ function search() {
             className="form"
             placeholder="Search for a city"
             autoComplete="off"
+            autoFocus
             onChange={handleCityChange}
           />
           <button type="submit">
