@@ -1,7 +1,7 @@
 .App .container-main {
-  max-width: 480px;
+  max-width: 460px;
   margin: 17px auto;
-  padding: 10px 50px;
+  padding: 10px 55px;
   background-image: url("palm.jpg");
   border-radius: 30px;
   border: 6px solid #0D1411;
@@ -16,7 +16,7 @@ body {
   margin-top: -15px;
   font-family: 'Italiana', serif;
   color: #ffd8d8;
-  font-size: 15px;
+  font-size: 15.5px;
 }
 
 .App .link {
@@ -29,6 +29,13 @@ body {
         0 0 90px #F0178F,
         0 0 100px #F0178F,
         0 0 150px #F0178F;
+}
+
+
+@media (max-width: 500px) {
+  .container-main {
+    padding: 10px 20px;
+  }
 }
 
 
