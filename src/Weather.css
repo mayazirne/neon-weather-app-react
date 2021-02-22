@@ -93,7 +93,7 @@
   font-family: neon;
   font-size: 34px;
   color: #ffd8d8;
-  opacity: 0.7;
+  opacity: 0.8;
   
 }
 
@@ -140,6 +140,6 @@
 
 @media (max-width: 500px) {
   .container {
-    margin-bottom: -80px;
+    margin-bottom: -60px;
   }
 }
