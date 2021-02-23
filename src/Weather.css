@@ -139,7 +139,7 @@
 }
 
 @media screen and  (max-width: 480px) {
-  .container-main {
-    padding: 10px 10px;
+  .container {
+    margin: 0 auto;
   }
 }
