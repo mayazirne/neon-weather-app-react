@@ -139,7 +139,7 @@
 }
 
 @media screen and  (max-width: 480px) {
-  .ul {
+  ul {
     position: relative;
     top: -110px;
     left: 110px;
