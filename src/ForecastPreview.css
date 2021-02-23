@@ -1,19 +1,19 @@
 .ForecastPreview {
-  margin: 20px auto;
+  margin: 21px auto;
   text-align: center;
-  font-size: 32px;
+  font-size: 33px;
   color: #ffd8d8;
   font-family: 'Italiana', serif;
   line-height: 31px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .ForecastPreview canvas {
   color: #ffd8d8;
   opacity: 0.4;
-  width: 57px;
+  width: 56.5px;
   display: block;
-  margin: 6px auto;
+  margin: 5px auto;
 }
 
 .ForecastPreview .days {
@@ -29,7 +29,7 @@
 }
 
 .ForecastPreview .forecast-temp {
-  font-size: 30px;
+  font-size: 29px;
 }
 
 

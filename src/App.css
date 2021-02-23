@@ -1,14 +1,14 @@
 .App .container-main {
-  max-width: 460px;
+  max-width: 445px;
   margin: 17px auto;
-  padding: 10px 55px;
+  padding: 10px 50px;
   background-image: url("palm.jpg");
   border-radius: 30px;
   border: 6px solid #0D1411;
 }
 
 body {
-  background: #162620;
+  background: #16231f;
 }
 
 .App footer {
@@ -32,9 +32,9 @@ body {
 }
 
 
-@media (max-width: 500px) {
+@media screen and  (max-width: 480px) {
   .container-main {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 }
 
