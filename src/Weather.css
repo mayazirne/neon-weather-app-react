@@ -137,3 +137,9 @@
   justify-content: center;
   margin-bottom: 37px;
 }
+
+@media screen and  (max-width: 480px) {
+  .container-main {
+    padding: 10px 10px;
+  }
+}
