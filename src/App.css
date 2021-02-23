@@ -1,6 +1,11 @@
+.App {
+  display: block;
+  margin: 0 auto;
+}
+
 .App .container-main {
   max-width: 445px;
-  margin: 17px auto;
+  margin: 16px auto;
   padding: 10px 50px;
   background-image: url("palm.jpg");
   border-radius: 30px;
@@ -30,7 +35,6 @@ body {
         0 0 100px #F0178F,
         0 0 150px #F0178F;
 }
-
 
 @media screen and  (max-width: 480px) {
   .container-main {
