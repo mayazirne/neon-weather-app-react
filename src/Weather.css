@@ -57,7 +57,7 @@
   font-family: 'Italiana', serif;
   text-transform: lowercase;
   line-height: 27px;
-  margin: 10px auto;
+  padding: 0;
 }
 
  .Weather a:link, a:visited, a:hover, a:active {
@@ -84,9 +84,6 @@
 
 .Weather .container {
   margin: 5px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .Weather .description {
@@ -136,13 +133,4 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 37px;
-}
-
-@media screen and  (max-width: 480px) {
-  ul {
-    position: relative;
-    top: -110px;
-    left: 110px;
-    margin-bottom: -60px;
-  }
 }

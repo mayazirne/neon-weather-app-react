@@ -14,7 +14,7 @@ export default function ForecastPreview(props) {
     return `${day}`;
   }
     return (
-        <div className="ForecastPreview col">
+        <div className="ForecastPreview col-3">
         <span className="days">{getDay()}</span>
         <WeatherIcon code={props.data.weather[0].icon} className="small-icons"/>
         <span className="forecast-temp">{Math.round(props.data.temp.day)}°</span>
